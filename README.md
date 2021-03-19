@@ -10,11 +10,14 @@ Hello, I am guard.
 
 ## Projects
 
+- [x] FeFlip v3
+- [x] FeFlip v4
+- [x] FeFlip v4.32
 - [x] FeFlip v5
 - [x] FeFlip v5.701
-- [x] FeFlip v6
-- [x] FeFlip v7
-- [x] FeFlip Premium
+- [x] FeFlip v6 - **2/12/2021**
+- [x] FeFlip v7 - **2/19/2021**
+- [x] FeFlip Premium - **3/06/2021**
 - [ ] FeFlip Elite
 - [ ] FeFlip v9
 - [ ] something other than feflip lol
