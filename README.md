@@ -24,7 +24,7 @@ Hello, I am guard.
 - [ ] discord bot
 
 ```lua
- print("FeFlip is cool")
+ print("guard is cool")
 ```
 
 #
