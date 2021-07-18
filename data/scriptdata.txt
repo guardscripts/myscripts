@@ -1,0 +1,12 @@
+--CREDITS
+
+color1 = Color3.fromRGB(167, 101, 224)
+color2 = Color3.fromRGB(123, 66, 173)
+color3 = Color3.fromRGB(79, 38, 115)
+picture = 6973637141
+discord = "guard#0381"
+numbercount = 100
+waitcount = 0
+
+--cguard bottom left corner discord
+cframediscord = "guard#0381"
