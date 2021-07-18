@@ -1,0 +1,9 @@
+{
+    "settings": {
+        "main": {
+            "instant": true,
+            "tween": false,
+            "warning": "turning both of these on or off might mess up the script"
+        }
+    }
+}
