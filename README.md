@@ -1,4 +1,4 @@
-![cool feflip logo](https://cdn.discordapp.com/attachments/822550234952892426/822564296294400060/logo1.png)
+![guarddesign](https://i.postimg.cc/XYy7HrWs/guardsiggy.png)
 
 
 Hello, I am guard.
