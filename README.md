@@ -1,7 +1,5 @@
 ![guarddesigns](https://i.postimg.cc/rwQX9c0f/guardsiggy.png)
 
-![](https://noc-turne.ga/nocturnedesign.png)
-
 Hello, I am guard.
 
 #
