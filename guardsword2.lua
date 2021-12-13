@@ -1,13 +1,12 @@
---two swords version | patched
+--syn only
 
-
-Bypass = "death"
+Bypass = "death" --pdeath 4 fling
 loadstring(game:GetObjects("rbxassetid://5325226148")[1].Source)()
------OPTIONS
-local ToolName = "DemonGodSword"
-local ToolName2 = "VoidLordSword" 
-local NoSound = false ----- sound or no sound (Background Music)
-local OldModel = false ----- Use Old Model or your accessory
+
+local ToolName = "DemonGodSword" --change to any name of hat
+local ToolName2 = "VoidLordSword" --change to any name of hat
+local NoSound = false 
+local OldModel = false 
 
 local IsDead = false
 local StateMover = true
@@ -20,8 +19,8 @@ if Bypass == "death" then
 	bullet = game.Players.LocalPlayer.Character["HumanoidRootPart"]
 	bullet.Transparency = 0
 	bullet.Massless = true
-	bullet.BrickColor = BrickColor.new"Tr. Green"
-bullet.Material = "Neon"
+	bullet.BrickColor = BrickColor.new"Tr. Green" --guard's fling color
+	bullet.Material = "Neon"
 	game:GetService("RunService").Heartbeat:connect(function()
 	bullet.Velocity = Vector3.new(35,0,0)
 	end)
@@ -34,7 +33,7 @@ bullet.Material = "Neon"
 	end
 
 	bbv = Instance.new("BodyPosition",bullet)
-    bbv.Position = playerss.Torso.CFrame.p
+    	bbv.Position = playerss.Torso.CFrame.p
 end
 
 
@@ -48,16 +47,16 @@ playerss.Torso.WaistBackAttachment.Position = Vector3.new(-0, -0, 0.6)
 playerss.Torso.WaistBackAttachment.Orientation = Vector3.new(-4.16, -179.28, 99.8)
 
 if Bypass == "death" then
-coroutine.wrap(function()
-	while true do
-		if not playerss or not playerss:FindFirstChildOfClass("Humanoid") or playerss:FindFirstChildOfClass("Humanoid").Health <= 0 then IsDead = true; return end
-		if StateMover then
-			bbv.Position = playerss.Torso.CFrame.p
-    		bullet.Position = playerss.Torso.CFrame.p
+	coroutine.wrap(function()
+		while true do
+			if not playerss or not playerss:FindFirstChildOfClass("Humanoid") or playerss:FindFirstChildOfClass("Humanoid").Health <= 0 then IsDead = true; return end
+			if StateMover then
+				bbv.Position = playerss.Torso.CFrame.p
+			bullet.Position = playerss.Torso.CFrame.p
+			end
+			game:GetService("RunService").RenderStepped:wait()
 		end
-		game:GetService("RunService").RenderStepped:wait()
-	end
-end)()
+	end)()
 end
 
 local CDDF = {}
@@ -65,19 +64,19 @@ local DamageFling = function(DmgPer)
 	if IsDead or Bypass ~= "death" or (DmgPer.Name == playerss.Name and DmgPer.Name == "non") or CDDF[DmgPer] or not DmgPer or not DmgPer:FindFirstChildOfClass("Humanoid") or DmgPer:FindFirstChildOfClass("Humanoid").Health <= 0 then return end
 	CDDF[DmgPer] = true; StateMover = false
 	local PosFling = (DmgPer:FindFirstChild("HumanoidRootPart") and DmgPer:FindFirstChild("HumanoidRootPart") .CFrame.p) or (DmgPer:FindFirstChildOfClass("Part") and DmgPer:FindFirstChildOfClass("Part").CFrame.p)
-    bbav = Instance.new("BodyAngularVelocity",bullet)
-    bbav.MaxTorque = Vector3.new(math.huge,math.huge,math.huge)
-    bbav.P = 1000000000000000000000000000
-    bbav.AngularVelocity = Vector3.new(10000000000000000000000000000000,100000000000000000000000000,100000000000000000)
-    game:GetService("Debris"):AddItem(bbav,0.1)
-    bullet.Rotation = playerss.Torso.Rotation
+	    bbav = Instance.new("BodyAngularVelocity",bullet)
+	    bbav.MaxTorque = Vector3.new(math.huge,math.huge,math.huge)
+	    bbav.P = 1000000000000000000000000000
+	    bbav.AngularVelocity = Vector3.new(10000000000000000000000000000000,100000000000000000000000000,100000000000000000)
+	    game:GetService("Debris"):AddItem(bbav,0.1)
+	    bullet.Rotation = playerss.Torso.Rotation
 	for _=1,15 do
 		bbv.Position = PosFling
 		bullet.Position = PosFling
 		wait(0.03)
 	end
 	bbv.Position = playerss.Torso.CFrame.p
-    bullet.Position = playerss.Torso.CFrame.p
+   	bullet.Position = playerss.Torso.CFrame.p
 	CDDF[DmgPer] = false; StateMover = true
 end
 
@@ -89,7 +88,7 @@ end
 
 
 
-
+--anim start
 cors = {}
 mas = Instance.new("Model",game:GetService("Lighting"))
 Model0 = Instance.new("Model")
@@ -7566,4 +7565,4 @@ end
 end
 end
 end
-------hi
+------guard.lol sussu
